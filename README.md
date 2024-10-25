@@ -1,1 +1,1 @@
-# n00bminion.gitbhub.io
+# n00bminion.github.io
