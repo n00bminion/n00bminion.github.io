@@ -11,7 +11,7 @@ title: Maths
           {% for post in site.posts %}
             {% if post.code == module.code %}
               <li>
-                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                <h4><a href="{{ post.url }}">{{ post.date | date: "%d %B %Y" }} - {{ post.title }}</a></h4>
               </li>
             {% endif %}
           {% endfor %}
