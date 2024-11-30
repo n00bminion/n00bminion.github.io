@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Maths
+title: Code
 ---
 
 <ul>
-  {% for module in site.maths %}
+  {% for module in site.coding %}
     <li>
       <h2>{{ module.name }}</h2>
         <ul>

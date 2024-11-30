@@ -26,17 +26,20 @@ title: Hey! It's Minh 👋
 #  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-instagram_username: minh_qt
+#instagram_username: minh_qt
 github_username:  n00bminion
 linkedin_username: minh-q-tran
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
 
 collections:
   maths:
+    output: true
+  coding:
     output: true
   
 # Exclude from processing.

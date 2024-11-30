@@ -9,5 +9,5 @@ Hi, I'm a software developer 🖥️ based in London, working mainly with Python
 
 I also recently returned back to university to study statistics 🧑‍🎓 
 
-This page is mainly about stuff I learned or is learning currently, like how to create this website... 
-
+This page is mainly about stuff I learned or is learning currently, like how to create this website in Jekyll... 
+ 
