@@ -10,6 +10,8 @@ This is another basic topic... Not much to say, mostly straight forward but link
 ***
 <br>
 
+
+
 ### Functions
 
 
@@ -40,4 +42,9 @@ This is another basic topic... Not much to say, mostly straight forward but link
 <br>
 
 ### Composite & Inverse Functions
+
+
+<br>
+
+### Indicator Functions
 
