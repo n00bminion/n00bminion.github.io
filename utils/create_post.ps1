@@ -31,13 +31,7 @@ usemathjax: true
 "@
 
 $content | Out-File -FilePath $file
-
-
-# Add-Content -Path $file '---'
-# Add-Content -Path $file 'layout: post'
-# Add-Content -Path $file 'code: PUT YOUR CODE HERE'
-# Add-Content -Path $file '---'
-
+Exit
 
 
 
