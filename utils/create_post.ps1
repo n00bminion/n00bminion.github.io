@@ -30,7 +30,7 @@ usemathjax: true
 <br>
 "@
 
-$content | Out-File -FilePath $file
+$content | Out-File -Encoding ASCII -FilePath $file
 Exit
 
 

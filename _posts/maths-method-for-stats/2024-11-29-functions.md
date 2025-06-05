@@ -28,16 +28,35 @@ Note that $$ \mathbb{R}\backslash \{0\} $$ denote real numbers excluding 0
 
 ### Even & Odd Functions
 
-****
+$f$ is an **even** function if $f(x) = f(-x)$
+
+$f$ is an **odd** function if $f(x) = -f(-x)$
+
+Note that all even functions have a symmetry about the $y$-axis (reflected by the $y$-axis) whereas the odd functions will have a rotational symmetry of order 2. This effectively mean you just have to rotate it by 90 degrees twice to get back to the same graph.
+
+An example of even function is $ f(x) = x^2 $. Both positive and negative $x$ maps to the same positive $y$ value. For the odd function, we can use $ f(x) = x $, where positive %x% maps to positive %y% only and vice versa. This satisfies the condition above $f(x) = -f(-x)$.
 
 <br>
 
 ### Periodic Functions
 
+$f$ is a **periodic** function if $f(x) = f(x+a)$ where $a$ is the period of $f$.
+
+Usually periodic functions are some sort of trignometric functions.
 
 <br>
 
 ### Polynomials Functions
+
+The general polynomial of degree $n$ in $x$ can be written as
+
+$$ y = f(x) = a_nx^n + a_{n-1}x^{n-1} + a_{n-2}x^{n-2} + ... +  a_1x^1 + a_0 \nonumber $$
+
+where $a_n, a_{n-2}, a_{n-3} ... a_1, a $ are numbers or coefficients and $a_n \ne 0$. The degree of the polynomial is the highest power of $x$.
+
+A popular polynomial function is the **quadratic** function.
+
+
 
 <br>
 
