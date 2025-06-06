@@ -21,6 +21,6 @@ layout: default
 </script>
 
 <!-- Import lunr.js from unpkg.com -->
-<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/js/lunr.js"></script>
 <!-- Custom search script which we will create below -->
 <script src="/js/search.js"></script>
