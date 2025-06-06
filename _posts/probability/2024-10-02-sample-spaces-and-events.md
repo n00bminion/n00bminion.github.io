@@ -22,7 +22,7 @@ For coin toss, the sample space is
 
 $$ \mathbb{S} = \{H,T\} \nonumber$$
 
-For more info on **[sets]({% post_url /maths-method-for-stats/2024-10-04-sets %})**, you can find it here
+For more info on sets, you can find it **[here]({% post_url /maths-method-for-stats/2024-10-04-sets %})**
 
 In cases where we have multiple multiple variables for the events, we will need to define both variables
 
