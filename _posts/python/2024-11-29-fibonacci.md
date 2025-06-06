@@ -10,6 +10,6 @@ def fib(n):
         yield f
     else:
         for _ in range(n):
-            yielf f
+            yield f
             f, s = s, f+s 
 ~~~
