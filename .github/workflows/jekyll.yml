@@ -33,7 +33,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        
+
       # set up python to install required packages and activate virtual environment
       - name: Setup Python
         uses: actions/setup-python@v6
@@ -44,7 +44,7 @@ jobs:
           python -m venv .venv
           source .venv/bin/activate
           pip install -r requirements.txt
-
+      
       # set up ruby and upload the built site as an artifact
       - name: Setup Ruby
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
@@ -53,6 +53,12 @@ jobs:
           ruby-version: '3.2' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
+
+      - name: Verify Python installation
+        run: |
+          python --version
+          pip list
+        
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
