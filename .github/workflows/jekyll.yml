@@ -69,7 +69,6 @@ jobs:
 
       - name: Output Jekyll Installation
         run: |
-          jekyll --version
           bundle list
 
       - name: Upload Pages Artifact
