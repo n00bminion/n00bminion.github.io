@@ -34,4 +34,5 @@ end
 gem "http_parser.rb", "~> 0.6.1", :platforms => [:jruby]
 
 # For embedding Jupyter Notebooks
+# https://github.com/red-data-tools/jekyll-jupyter-notebook
 gem "jekyll-jupyter-notebook"

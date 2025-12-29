@@ -37,6 +37,14 @@ plugins:
   - jekyll-feed
   - jekyll-jupyter-notebook # For embedding Jupyter Notebooks
 
+jupyter_notebook:
+  prompt: false
+  # this doesn't work so using comvert_notebook.py to manually convert notebooks into html
+  # however, it actually recognise the html file if written like this in the .md 
+  # {% jupyter_notebook "\assets\notebooks\report_name" %} 
+  # note that report_name doesn't have the .ipynb extension
+  input: false 
+
 collections:
   maths:
     output: true
