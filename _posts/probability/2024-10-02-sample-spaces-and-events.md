@@ -3,10 +3,6 @@ layout: post
 code: MASU5051
 usemathjax: true
 ---
- 
-some text
-
-***
 
 {% jupyter_notebook "\assets\notebooks_html\venn" %} 
 
