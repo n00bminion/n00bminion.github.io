@@ -175,7 +175,7 @@ $$
 
 ### Completing The Square
 
-This is a technique to use on $2^{nd}$ degree expressing or quadratic expression to find factors. The technique involves rewriting the quadratic as a sum of squared linear terms and a constant.
+This is a technique to use on $2^{nd}$ degree expression or quadratic expression to find factors. The technique involves rewriting the quadratic as a sum of squared linear terms and a constant.
 
 From above in the *Polynomials* section, we can see that $(x+a)^2 = x^2 + 2ax + a^2$. This can be rewriten as:
 
