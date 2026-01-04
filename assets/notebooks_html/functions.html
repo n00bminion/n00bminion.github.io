@@ -7511,7 +7511,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6064f0cf">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8ed5138c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7538,7 +7538,11 @@ a.anchor-link {
 <li><a href="#toc1_1_6_3_">Cosine Rule</a></li>
 </ul>
 </li>
-<li><a href="#toc1_1_7_">Composite &amp; Inverse Functions</a></li>
+<li><a href="#toc1_1_7_">Composite &amp; Inverse Functions</a><ul>
+<li><a href="#toc1_1_7_1_">Composite functions</a></li>
+<li><a href="#toc1_1_7_2_">Inverse function</a></li>
+</ul>
+</li>
 <li><a href="#toc1_1_8_">Indicator Functions</a></li>
 </ul>
 </li>
@@ -7849,16 +7853,6 @@ $$ cos(x-y) = cos(x)cos(y) + sin(x)sin(y) $$</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4d02bb03">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>$$cos(x \pm y) = cos(x)cos(y) \mp sin(x)sin(y) $$ $$ sin(x \pm y) = sin(x)cos(y) \pm sin(y)cos(x) $$</p>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d477d9e2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7968,8 +7962,52 @@ $$ sin(y)cos(x) = \frac{sin(x+y) - sin(x-y)}{2} $$ $$ \Rightarrow sin(\frac{\alp
 <p>$$ a^2 = b^2-2bx + c^2 \implies b^2-2bc \space cosA + c^2 \implies b^2 + c^2 -2bc \space cosA \nonumber $$</p>
 <p>You can do the same with side c and side b to get the results</p>
 <p>$$ c^2 = b^2 + a^2 -2ba \space cosC \space \And \space b^2 = c^2 + a^2 -2ca \space cosB; \nonumber $$</p>
-<br/>
-<h3 id="Composite-&amp;-Inverse-Functions"><a id="toc1_1_7_"></a><a href="#toc0_">Composite &amp; Inverse Functions</a><a class="anchor-link" href="#Composite-&amp;-Inverse-Functions">¶</a></h3><br/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dd9e1341">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Composite-&amp;-Inverse-Functions"><a id="toc1_1_7_"></a><a href="#toc0_">Composite &amp; Inverse Functions</a><a class="anchor-link" href="#Composite-&amp;-Inverse-Functions">¶</a></h3><h4 id="Composite-functions"><a id="toc1_1_7_1_"></a><a href="#toc0_">Composite functions</a><a class="anchor-link" href="#Composite-functions">¶</a></h4><p>Composite function is a function that is composed for 2 more functions being applied consecutively.</p>
+<p>An example is where you have 2 functions $$f(x) = x^2 $$ $$ g(x) = sin(x)$$</p>
+<p>We can define the composition function $f \circ g$ by first applying $g$ and then $f$. This DOES NOT mean the two function are multiplied but rather it is a nested function $$f \circ g = f(g(x))$$</p>
+<p>Substitute the definition of $f$ and $g$ back in, we get $$ f(g(x)) = f(sin(x)) = sin^2(x) $$</p>
+<p>It's worth noting that you apply the function matters and, in general, the reverse will not give the same result $$f \circ g \ne g \circ f \Rightarrow f(g(x)) \ne g(f(x)) $$ $$ sin^2(x) \ne sin(x^2) $$</p>
+<h4 id="Inverse-function"><a id="toc1_1_7_2_"></a><a href="#toc0_">Inverse function</a><a class="anchor-link" href="#Inverse-function">¶</a></h4><p>A function is can thought of as, for a normal function $f$, you put in $x$ and you get $f(x)$ or $y$ (or given $x$, what is $y$?)</p>
+<p>$$ x \rightarrow \boxed{f} \rightarrow f(x) \space or \space y $$</p>
+<p>An inverse function is effectively undoes what $f(x)$ does, how can you go to $x$ from $y$ (or given $y$, what is $x$?) and can visualised like this</p>
+<p>$$ x \leftarrow \boxed{f^{-1}}  \leftarrow f(x) \space or \space y $$</p>
+<p>To create the inverse function, we would then need to make $y = f(x)$ and then solve for $x$. Here's an example $$ f(x) = y = 3x - 4 $$</p>
+<p>We rearrange to solve for x by $$ y = 3x - 4 \Rightarrow x =  \frac{y + 4}{3} \Rightarrow f^{-1} = \frac{y + 4}{3} $$</p>
+<p>Note that not all functions have an inverse function. An example is quadratic equation $y=x^2$. Whilst every value of $x$ or the domain of $x$ maps to a value of $y$, a single value of $y$ can map to two values of $x$. Thus the below condition must be met in order for a function to have an inverse function $$ f(f^{-1}(x)) = x $$</p>
+<p>or $$ f^{-1}(f(x)) = x $$</p>
+<p>You would have notice that condition for a function to have an inverse function is the special case where the composite function order does not matter.</p>
+<p>However, if we bound the domain of $f(x) =x^2$ to $(0, \infty)$, this now restrict the mappings so that only one value of $x$ will map to $y$. Thus $f(x) =x^2$ will have a domain $(0, \infty)$ and range $(0, \infty)$ and $f^{-1}(x) = +\sqrt{y}$</p>
+<p>Notice due to the periodic nature of the trignometric functions, their domain also need to be bounded.</p>
+<ul>
+<li>For $sin(x)$, domain $[-\frac{\pi}{2}, \frac{\pi}{2}]$ would result in range $[1,1]$ for $sin^{-1}(x)$</li>
+<li>For $cos(x)$, domain $[0, \pi]$ would result in range $[1,1]$ for $cos^{-1}(x)$</li>
+<li>For $tan(x)$, domain $[-\frac{\pi}{2}, \frac{\pi}{2}]$ would result in range $(-\infty,\infty)$ for $tan^{-1}(x)$</li>
+</ul>
+<p>Lastly, the graph of the inverse function is the reflection of the function at $y = x$. Took me a while to understand why this was the case but a little proof helped.</p>
+<p>Suppose point $D_0(x,y)$ is a point on the graph plotted by $f(x)$ since y = f(x)$. Same thing with the graph plotted using x = f^{-1}(y), we have point $D_1(y,x)$.</p>
+<p>Two points are symmetrical w.r.t to a line $a$ if the line $a$ is perpendicular to the line $b$ created by connecting $D_0(x,y)$ and $D_1(y,x)$ at its midpoint $M$.</p>
+<p>If we set the line $a$ to be $x=y$, we need to prove that basically the midpoint $M$ lies on $x=y$ and line $b$ is perpendicular to line $a$.</p>
+<p>The midpoint $M$ is $\frac{x+y}{2}, \frac{x+y}{2}$, since both the $x$ and $y$ coordinate are the same, midpoint $M$ lies on the $x=y$ line.</p>
+<p>We can check if 2 lines are perpendicular if the product of their slope is $-1$. We know the gradientor $x=y$ is 1 by definition. The gradient for line $b$ is $$ \frac{x-y}{y-x} \Rightarrow -\frac{x-y}{x-y} = -1 $$</p>
+<p>We can see that the product of the two gradient is -1 and the line intersect at midpoint $M$ and thus the graph of the inverse function is the reflection of the function at $y = x$</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e7093d16">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Indicator-Functions"><a id="toc1_1_8_"></a><a href="#toc0_">Indicator Functions</a><a class="anchor-link" href="#Indicator-Functions">¶</a></h3>
 </div>
 </div>
