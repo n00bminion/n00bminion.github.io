@@ -7511,7 +7511,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c6d0ae08">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6064f0cf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7530,8 +7530,8 @@ a.anchor-link {
 <li><a href="#toc1_1_6_1_3_">Generalisation of sum and difference formulas &amp; derivation of tan function</a></li>
 <li><a href="#toc1_1_6_1_4_">Double angle formula</a></li>
 <li><a href="#toc1_1_6_1_5_">Half angle formula</a></li>
-<li><a href="#toc1_1_6_1_6_">Sum-to-Product formula</a></li>
-<li><a href="#toc1_1_6_1_7_">Product-to-Sum formula</a></li>
+<li><a href="#toc1_1_6_1_6_">Product-to-Sum formula</a></li>
+<li><a href="#toc1_1_6_1_7_">Sum-to-Product formula</a></li>
 </ul>
 </li>
 <li><a href="#toc1_1_6_2_">Sine Rule</a></li>
@@ -7830,18 +7830,31 @@ $$ cos(x-y) = cos(x)cos(y) + sin(x)sin(y) $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Half-angle-formula"><a id="toc1_1_6_1_5_"></a><a href="#toc0_">Half angle formula</a><a class="anchor-link" href="#Half-angle-formula">¶</a></h5><p>From double angle, we can also have half angle formula. With a little rearrangement, we have $$  $$</p>
-<p>For $cos(x), we have $$  $$</p>
+<h5 id="Half-angle-formula"><a id="toc1_1_6_1_5_"></a><a href="#toc0_">Half angle formula</a><a class="anchor-link" href="#Half-angle-formula">¶</a></h5><p>From double angle, we can also have half angle formula. We know from above $$ cos^2(x) - sin^2(x) = cos(2x) $$ $$ cos^2(x) + sin^2(x) = 1 $$</p>
+<p>With some simple rearrangement of the second formula $$ cos^2(x) = 1 - sin^2(x) $$ $$ sin^2(x) = 1 - cos^2(x) $$</p>
+<p>Putting this back into the double angle formula $$ (1 - sin^2(x)) - sin^2(x) = cos(2x) \Rightarrow 1-2sin^2(x) = cos(2x)  $$ $$ cos^2(x) - (1 - cos^2(x)) = cos(2x) \Rightarrow 2cos^2(x) -1 =  cos(2x) $$</p>
+<p>If we set $$\theta = 2x \Rightarrow \frac{\theta}{2} = x$$</p>
+<p>And the substitute back in to the two formula we derived just above</p>
+<p>$$ 1-2sin^2(x) = cos(2x) \rightarrow 1-2sin^2(\frac{\theta}{2}) = cos(\theta) $$ $$ 2cos^2(x) - 1 =  cos(2x) \rightarrow 2cos^2(\frac{\theta}{2}) - 1 =  cos(\theta) $$</p>
+<p>We now just need to rearrange the formulas so that the $\frac{\theta}{2}$ is one side.</p>
+<p>For sin function</p>
+<p>$$ 1-2sin^2(\frac{\theta}{2}) = cos(\theta) $$ $$ \Rightarrow 2sin^2(\frac{\theta}{2}) = 1 - cos(\theta) $$ $$ \Rightarrow sin^2(\frac{\theta}{2}) = \frac{1 - cos(\theta)}{2} $$ $$ \Rightarrow sin(\frac{\theta}{2}) = \sqrt{\frac{1 - cos(\theta)}{2}} $$</p>
+<p>And for cos function</p>
+<p>$$ 2cos^2(\frac{\theta}{2}) - 1 =  cos(\theta)  $$ $$ \Rightarrow 2cos^2(\frac{\theta}{2}) = 1 + cos(\theta) $$ $$ \Rightarrow cos^2(\frac{\theta}{2}) = \frac{1 + cos(\theta)}{2} $$ $$ \Rightarrow cos(\frac{\theta}{2}) = \sqrt{\frac{1 + cos(\theta)}{2}} $$</p>
+<p>For tan function, we can once again derive using sin and cos function. Gonna use $x$ again because $\theta$ is a pain in the ass to write using latex $$ tan(\frac{x}{2}) = \frac{sin(\frac{x}{2})}{cos(\frac{x}{2})} = \frac{\sqrt{\frac{1 - cos(x)}{2}}}{\sqrt{\frac{1 + cos(\theta)}{2}}} $$</p>
+<p>Cancel out the $\sqrt{\frac{1}{2}}$ on both the denominator and numerator, we get $$ tan(\frac{x}{2}) = \sqrt{\frac{1 - cos(x)}{1+cos(x)}} $$</p>
+<p>Rationalise the denominator by multiplying both the denominator and numerator with $\sqrt{1-cos(x)}$</p>
+<p>$$ \sqrt{\frac{(1 - cos(x))(1 - cos(x))}{(1+cos(x))(1 - cos(x))}} = \sqrt{\frac{(1 - cos(x))^2}{1^2 - cos^2(x)}} = \frac{1-cos(x)}{\sqrt{sin^2(x)}} $$ $$ \Rightarrow tan(\frac{x}{2}) = \frac{1-cos(x)}{sin(x)}  $$</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e6c51e5e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4d02bb03">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Sum-to-Product-formula"><a id="toc1_1_6_1_6_"></a><a href="#toc0_">Sum-to-Product formula</a><a class="anchor-link" href="#Sum-to-Product-formula">¶</a></h5>
+<p>$$cos(x \pm y) = cos(x)cos(y) \mp sin(x)sin(y) $$ $$ sin(x \pm y) = sin(x)cos(y) \pm sin(y)cos(x) $$</p>
 </div>
 </div>
 </div>
@@ -7851,7 +7864,53 @@ $$ cos(x-y) = cos(x)cos(y) + sin(x)sin(y) $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Product-to-Sum-formula"><a id="toc1_1_6_1_7_"></a><a href="#toc0_">Product-to-Sum formula</a><a class="anchor-link" href="#Product-to-Sum-formula">¶</a></h5>
+<h5 id="Product-to-Sum-formula"><a id="toc1_1_6_1_6_"></a><a href="#toc0_">Product-to-Sum formula</a><a class="anchor-link" href="#Product-to-Sum-formula">¶</a></h5><p>Recall from the above, we derived the sum and difference of 2 angles formula</p>
+<p>$$cos(x \pm y) = cos(x)cos(y) \mp sin(x)sin(y) $$ $$ sin(x \pm y) = sin(x)cos(y) \pm sin(y)cos(x) $$</p>
+<p>The product-to-sum formulas flips the formula and makes the products (e.g. $cos(x)cos(y) = ...$, $sin(x)sin(y) = ...$, $sin(x)cos(y) = ...$, $sin(y)cos(x) = ...$) the left handside while the sum is on the right handside.</p>
+<p>Let's take a look at the $cos(x)cos(y)$ and $sin(x)sin(y)$ formulas which relies on the $cos(x \pm y)$ formula, we will need to isolate the products from the original equation. We can do this by adding/subtracting $cos(x \pm y)$ against itself.</p>
+<p>For $cos(x)cos(y)$
+$$ cos(x+y) + cos(x-y) = (cos(x)cos(y) - sin(x)sin(y)) + (cos(x)cos(y) + sin(x)sin(y)) $$
+$$ = cos(x)cos(y) - sin(x)sin(y) + cos(x)cos(y) + sin(x)sin(y) $$
+$$ \Rightarrow cos(x+y) + cos(x-y) = 2cos(x)cos(y) $$
+$$ \Rightarrow cos(x)cos(y) = \frac{cos(x+y) + cos(x-y)}{2}  $$</p>
+<p>For $sin(x)sin(y)$
+$$ cos(x+y) - cos(x-y) = (cos(x)cos(y) - sin(x)sin(y)) - (cos(x)cos(y) + sin(x)sin(y)) $$
+$$ = cos(x)cos(y) - sin(x)sin(y) - cos(x)cos(y) - sin(x)sin(y) $$
+$$ \Rightarrow cos(x+y) - cos(x-y) = -2sin(x)sin(y) $$
+$$ \Rightarrow sin(x)sin(y) = \frac{cos(x-y) - cos(x+y)}{2}  $$</p>
+<p>We can move to $sin(x)cos(y)$ and $sin(y)cos(x)$ which we will use $sin(x \pm y)$ instead but follow the same strategy</p>
+<p>For $sin(x)cos(y)$
+$$ sin(x+y) + sin(x-y) = (sin(x)cos(y) + sin(y)cos(x)) + (sin(x)cos(y) - sin(y)cos(x)) $$
+$$ = sin(x)cos(y) + sin(y)cos(x) + sin(x)cos(y) - sin(y)cos(x) $$
+$$ \Rightarrow sin(x+y) + sin(x-y) = 2sin(x)cos(y) $$
+$$ \Rightarrow sin(x)cos(y) = \frac{sin(x+y) + sin(x-y)}{2}  $$</p>
+<p>For $sin(y)cos(x)$
+$$ sin(x+y) - sin(x-y) = (sin(x)cos(y) + sin(y)cos(x)) - (sin(x)cos(y) - sin(y)cos(x)) $$
+$$ = sin(x)cos(y) + sin(y)cos(x) - sin(x)cos(y) + sin(y)cos(x) $$
+$$ \Rightarrow sin(x+y) - sin(x-y) = 2sin(y)cos(x) $$
+$$ \Rightarrow sin(y)cos(x) = \frac{sin(x+y) - sin(x-y)}{2}  $$</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e6c51e5e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h5 id="Sum-to-Product-formula"><a id="toc1_1_6_1_7_"></a><a href="#toc0_">Sum-to-Product formula</a><a class="anchor-link" href="#Sum-to-Product-formula">¶</a></h5><p>We can use the product-to-sum formulas to get the sum-to-product formulas.</p>
+<p>This now means making the sum (e.g. $sin(x) + sin(y) =...$, $cos(x) + cos(y) =...$, $sin(x) - sin(y) =...$, $cos(x) - cos(y) =...$).</p>
+<p>Notice that these coincides with the way how the product-to-sum formulas laid out except that instead of $sin(x) + sin(y)$, it is $sin(x+y) + sin(x-y)$. Let's use some dummy variables ($\alpha$ and $\beta$) to replace the sum and differences.</p>
+<p>Let $$x+y = \alpha$$ $$x-y = \beta$$</p>
+<p>Thus in term of $\alpha$ and $\beta$, we have $x$ as $$ (x+y) + (x-y) = \alpha + \beta $$ $$ 2x = \alpha + \beta $$ $$ \Rightarrow x = \frac{\alpha + \beta}{2} $$</p>
+<p>and $y$ as $$ (x+y) - (x-y) = \alpha - \beta $$ $$ 2y = \alpha - \beta $$ $$ \Rightarrow y = \frac{\alpha-\beta}{2} $$</p>
+<p>Replacing this back into the product-to-sum formulas, we get the below results (just replace the dummy $\alpha$ and $\beta$ variables with $x$ and $y$ respectively at the end)</p>
+<p>For $cos(x) + cos(y)$ $$ cos(x)cos(y) = \frac{cos(x+y) + cos(x-y)}{2} $$ $$ \Rightarrow cos(\frac{\alpha + \beta}{2})cos(\frac{\alpha-\beta}{2}) = \frac{cos(\alpha) + cos(\beta)}{2} $$ $$ \Rightarrow cos(\alpha) + cos(\beta) = 2cos(\frac{\alpha + \beta}{2})cos(\frac{\alpha-\beta}{2}) $$</p>
+<p>For $cos(x) - cos(y)$ $$ sin(x)sin(y) = \frac{cos(x-y) - cos(x+y)}{2} $$ $$ \Rightarrow sin(\frac{\alpha +\beta}{2})sin(\frac{\alpha-\beta}{2}) = \frac{cos(\beta) - cos(\alpha)}{2} $$ $$ \Rightarrow cos(\beta) - cos(\alpha) = 2sin(\frac{\alpha + \beta}{2})sin(\frac{\alpha-\beta}{2}) $$ $$ \Rightarrow cos(\alpha) - cos(\beta) = -2sin(\frac{\alpha + \beta}{2})sin(\frac{\alpha-\beta}{2}) $$</p>
+<p>For $sin(x) + sin(y)$
+$$ sin(x)cos(y) = \frac{sin(x+y) + sin(x-y)}{2} $$ $$ \Rightarrow sin(\frac{\alpha +\beta}{2})cos(\frac{\alpha-\beta}{2}) = \frac{sin(\alpha) + sin(\beta)}{2} $$ $$ \Rightarrow sin(\alpha) + sin(\beta) = 2sin(\frac{\alpha + \beta}{2})cos(\frac{\alpha-\beta}{2}) $$</p>
+<p>For $sin(x) - sin(y)$
+$$ sin(y)cos(x) = \frac{sin(x+y) - sin(x-y)}{2} $$ $$ \Rightarrow sin(\frac{\alpha -\beta}{2})cos(\frac{\alpha+\beta}{2}) = \frac{sin(\alpha) - sin(\beta)}{2} $$ $$ \Rightarrow sin(\alpha) - sin(\beta) = 2sin(\frac{\alpha - \beta}{2})cos(\frac{\alpha+\beta}{2}) $$</p>
 </div>
 </div>
 </div>
